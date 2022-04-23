@@ -13,6 +13,7 @@ for (( c=0; c<$(gpu-detect listjson | jq 'length'); c++ ))\
 			((x+=1));\
 		fi\
 	fi\
+	
 done
 
 echo "Searching for AMD cards"
@@ -32,4 +33,5 @@ for (( c=0; c<$(gpu-detect listjson | jq 'length'); c++ ))\
 			((x+=1));\
 		fi\
 	fi\
+	
 done
